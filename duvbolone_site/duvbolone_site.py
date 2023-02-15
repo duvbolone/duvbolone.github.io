@@ -1,36 +1,15 @@
-# type: ignore
-"""Welcome to Pynecone! This file outlines the steps to create a basic app."""
 from pcconfig import config
-
 import pynecone as pc
-
-#docs_url = "https://pynecone.io/docs/getting-started/introduction"
-#filename = f"{config.app_name}/{config.app_name}.py"
-
+from duvbolone_site.pages import index
 
 class State(pc.State):
     """The app state."""
-
     pass
 
-
-@pc.route(route="/", title="Test")
-def index() -> pc.Component:
-    return pc.center(
-        pc.vstack(
-            pc.heading(
-                "Welcome to whatever this is!!", 
-                font_size = "2em",
-                _hover = {
-                    "opacity":0.85
-                },
-                on_click = pc.toggle_color_mode
-                ),
-        ),
-        padding_top="10%",
+app = pc.App(
+    state=State
     )
 
-
 # Add state and page to the app.
-app = pc.App(state=State)
+app.add_page(index.index, route="/", title="Matt3o0's Website", image="/M27.png")
 app.compile()
