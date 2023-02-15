@@ -6,7 +6,7 @@ def index():
         navBar("/"),
         pc.vstack(
             pc.hstack(
-                pc.heading("⚠️", color="rgb(200, 170, 0)", _hover={"color": "rgb(210, 185, 0)"}),
+                pc.heading("⚠️", color="rgb(200, 180, 0)", _hover={"color": "rgb(210, 185, 0)"}),
                 pc.heading("Work In Progress", color = "gray"),
                 pc.circular_progress(
                     is_indeterminate = True,

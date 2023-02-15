@@ -36,10 +36,6 @@ def navBar(root):
                         has_arrow = True
                     ),
                     href = "https://discord.com/users/668874138160594985"
-                ),
-                pc.tooltip(
-                    pc.button(pc.icon(tag="MoonIcon"), on_click=pc.toggle_color_mode, _hover={"opacity": 0.85}),
-                    label = "Toggle color mode"
                 )
             ),
             padding = "6px",
