@@ -1,7 +1,13 @@
 import pynecone as pc
 from duvbolone_site.comps.navbar import navBar
 
-def index():
+route = "/"
+title = "Matt3o0's Website"
+image = "/M27.png"
+description = "My website, supposed to tell you something about me and more."
+
+def page():
+
     return pc.box(
         navBar("/"),
         pc.vstack(

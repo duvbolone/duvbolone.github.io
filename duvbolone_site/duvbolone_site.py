@@ -5,12 +5,21 @@ from duvbolone_site.pages import index, about
 class State(pc.State):
     pass
 
+pages = [index, about]
 
 app = pc.App(
-    state=State
+    state=State,
+    theme_color = "#FFFFFF"
     )
 
+for page in pages:
+    app.add_page(
+        page.page(),
+        route = page.route,
+        title = page.title,
+        image = page.image,
+        description = page.description,
+        )
+
 # Add state and page to the app.
-app.add_page(index.index, route="/", title="Matt3o0's Website", image="/M27.png", description="My website. Caution, it's very questionable 💀")
-app.add_page(about.about, route="/about", title="Matt3o0's Website", image="/M27.png", description="My website. Caution, it's very questionable 💀")
 app.compile()
