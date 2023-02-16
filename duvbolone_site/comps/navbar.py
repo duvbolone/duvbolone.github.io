@@ -6,36 +6,80 @@ def navBar(root):
         pc.hstack(
             pc.link(
                 pc.hstack(
-                    pc.image(src="/M27_cropped.png", width="5%", height="5%", box_shadow = "rgba(0, 0, 0, 0.3) 0px 3px 10px", border_radius="30px", _hover={"opacity": 0.85}),
-                    pc.heading("Matt3o0", _hover={"opacity": 0.85}),
+                    pc.image(src="/M27_cropped.png", width="8%", height="8%", box_shadow = "rgba(0, 0, 0, 0.3) 0px 3px 10px", border_radius="30px"),
+                    pc.tablet_and_desktop(
+                        pc.heading("Matt3o0", font_size = "150%"),
+                    ),
+                    _hover={"opacity": 0.85}
                 ),
                 href = "/"
             ),
             pc.spacer(),
-            pc.hstack(
-                pc.link(
-                    pc.tooltip(
-                        pc.button("About", _hover={"opacity": 0.85}),
-                        label = "My about me page",
-                        has_arrow = True
+            pc.tablet_and_desktop(
+                pc.hstack(
+                    pc.link(
+                        pc.tooltip(
+                            pc.button("About", _hover={"opacity": 0.85}),
+                            label = "My about me page",
+                            has_arrow = True
+                        ),
+                        href = "/about"
                     ),
-                    href = "/about"
+                    pc.link(
+                        pc.tooltip(
+                            pc.button(pc.image(src="/icons/github-mark-white.png", height = "20px", width = "20px"), _hover={"opacity": 0.85}),
+                            label = "My GitHub profile",
+                            has_arrow = True
+                        ),
+                        href = "https://github.com/duvbolone"
+                    ),
+                    pc.link(
+                        pc.tooltip(
+                            pc.button(pc.image(src="/icons/discord-mark-white.png", height = "auto", width = "20px"), _hover={"opacity": 0.85}),
+                            label = "My Discord profile",
+                            has_arrow = True
+                        ),
+                        href = "https://discord.com/users/668874138160594985"
+                    )
                 ),
-                pc.link(
-                    pc.tooltip(
-                        pc.button("GitHub", _hover={"opacity": 0.85}),
-                        label = "My GitHub profile",
-                        has_arrow = True
+            ),
+            pc.mobile_only(
+                pc.menu(
+                    pc.menu_button(pc.icon(tag="HamburgerIcon")),
+                    pc.menu_list(
+                        pc.menu_item(
+                            pc.link(
+                                pc.tooltip(
+                                    pc.button("About", _hover={"opacity": 0.85}),
+                                    label = "My about me page",
+                                    has_arrow = True
+                                ),
+                                href = "/about"
+                            ),
+                        ),
+                        pc.menu_divider(),
+                        pc.menu_item(
+                            pc.link(
+                                pc.tooltip(
+                                    pc.button(pc.image(src="/icons/github-mark-white.png", height = "20px", width = "20px"), _hover={"opacity": 0.85}),
+                                    label = "My GitHub profile",
+                                    has_arrow = True
+                                ),
+                                href = "https://github.com/duvbolone"
+                            )
+                        ),
+                        pc.menu_item(
+                            pc.link(
+                                pc.tooltip(
+                                    pc.button(pc.image(src="/icons/discord-mark-white.png", height = "auto", width = "20px"), _hover={"opacity": 0.85}),
+                                    label = "My Discord profile",
+                                    has_arrow = True
+                                ),
+                                href = "https://discord.com/users/668874138160594985"
+                            )
+                        ),
                     ),
-                    href = "https://github.com/duvbolone"
-                ),
-                pc.link(
-                    pc.tooltip(
-                        pc.button("Discord", _hover={"opacity": 0.85}),
-                        label = "My Discord profile",
-                        has_arrow = True
-                    ),
-                    href = "https://discord.com/users/668874138160594985"
+                    background_color = "rgb(40, 40, 40)"
                 )
             ),
             padding = "6px",
@@ -44,5 +88,6 @@ def navBar(root):
         position = "sticky",
         background_color = "rgba(0, 0, 0, 0.1)",
         backdrop_filter="blur(2px)",
-        box_shadow = "rgba(0, 0, 0, 0.1) 0px 4px 8px"
+        box_shadow = "rgba(0, 0, 0, 0.1) 0px 4px 8px",
+        z_index = 99
     )

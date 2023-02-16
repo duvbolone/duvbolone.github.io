@@ -7,9 +7,19 @@ class State(pc.State):
 
 pages = [index, about]
 
+style = {
+    "theme_color": "#FFFFFF",
+    "font_family":"helvetica",
+    "background_color": "rgb(30, 30, 30)",
+    "color":"#FFFFFF",
+    pc.Button: {
+        "bg":"rgb(50, 50, 50)"
+    }
+}
+
 app = pc.App(
     state=State,
-    theme_color = "#FFFFFF"
+    style = style
     )
 
 for page in pages:
