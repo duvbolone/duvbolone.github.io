@@ -20,9 +20,9 @@ def page():
                     track_color = "transparent"
                     ),
                 padding = "40px",
-                _hover={"opacity": 0.85}
+                _hover={"opacity": 0.85},
             ),
-            pc.markdown("*You can check the source code on my **[GitHub profile](https://github.com/duvbolone/duvbolone.github.io)** if interested*", padding = "40px"),
+            pc.markdown("*You can check the source code on my **[GitHub profile](https://github.com/duvbolone/duvbolone.github.io)** if interested*", padding = "40px", width = "40%"),
             pc.skeleton_text(
                     no_of_lines = 8,
                     width = "40%",
