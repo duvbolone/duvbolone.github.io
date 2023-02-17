@@ -6,28 +6,201 @@ title = "Matt3o0's Website"
 image = "/M27.png"
 description = "My website, supposed to tell you something about me and more."
 
-def page():
 
+def page():
     return pc.box(
         navBar("/"),
-        pc.vstack(
-            pc.hstack(
-                pc.heading("⚠️", color="rgb(200, 180, 0)", _hover={"color": "rgb(210, 185, 0)"}),
-                pc.heading("Work In Progress", color = "gray"),
-                pc.circular_progress(
-                    is_indeterminate = True,
-                    color = "rgb(150, 150, 150)",
-                    track_color = "transparent"
-                    ),
-                padding = "40px",
-                _hover={"opacity": 0.85},
+        pc.tablet_and_desktop(
+            pc.vstack(
+                pc.heading(
+                    "Welcome wanderer!",
+                    background_image="linear-gradient(60deg, rgb(250, 0, 0)10%, rgb(0, 0, 250))",
+                    background_clip="text",
+                    # text_shadow="rgb(0,0,0,0.5) -4px 4px 5px",
+                    font_size="500%",
+                    filter="blur(0px)"
+                ),
+                pc.heading(
+                    "This is Matt3o0's website, let me show you what to do here.")
             ),
-            pc.markdown("*You can check the source code on my **[GitHub profile](https://github.com/duvbolone/duvbolone.github.io)** if interested*", padding = "40px", width = "40%"),
-            pc.skeleton_text(
-                    no_of_lines = 8,
-                    width = "40%",
-                    height = "20px",
-                    speed = 1.5
+            pc.hstack(
+                pc.box(
+                    pc.text("Get to know Matt3o0 a little better on his about me page.",
+                            padding="20px", font_size="150%"),
+                    pc.link(
+                        pc.tooltip(
+                            pc.button(pc.icon(tag="LinkIcon"), "About Me", bg="rgb(5, 5, 55)",
+                                      _hover={"opacity": 0.85}),
+                            label="My about me page",
+                            has_arrow=True,
+                        ),
+                        href="/about",
+                        position="relative",
+                        padding_left="15px",
+                        padding_bottom="15px"
                     ),
+                    height="230px",
+                    width="300px",
+                    border_radius="2em",
+                    bg="rgba(20, 20, 70)",
+                    opacity=1,
+                    box_shadow="rgb(0, 0, 0, .2) -15px 20px 15px",
+                    backdrop_filter="blur(2px)",
+                    position="relative",
+                    left="300px",
+                    top="100px"
+                ),
+                pc.box(
+                    pc.text("Check out Matt3o0's projects",
+                            padding="20px", font_size="150%"),
+                    pc.link(
+                        pc.tooltip(
+                            pc.button(pc.icon(tag="LinkIcon"), "Projects", bg="rgb(5, 5, 55)",
+                                      _hover={"opacity": 0.85}),
+                            label="My project(s)",
+                            has_arrow=True,
+                        ),
+                        href="/projs",
+                        position="relative",
+                        padding_left="15px",
+                        padding_bottom="15px"
+                    ),
+                    height="230px",
+                    width="300px",
+                    border_radius="2em",
+                    bg="rgba(20, 20, 70)",
+                    opacity=1,
+                    box_shadow="rgb(0, 0, 0, .2) -15px 20px 15px",
+                    backdrop_filter="blur(2px)",
+                    position="relative",
+                    left="350px",
+                    top="100px"
+                ),
+                pc.box(
+                    pc.text("More to come soon",
+                            padding="20px", font_size="150%", font_style="italic"),
+                    pc.link(
+                        pc.tooltip(
+                            pc.button(pc.icon(tag="LinkIcon"), "Soon™", bg="rgb(5, 5, 55)",
+                                      _hover={"opacity": 0.85}),
+                            label="Nothing yet",
+                            has_arrow=True,
+                        ),
+                        href="/",
+                        position="relative",
+                        padding_left="15px",
+                        padding_bottom="15px"
+                    ),
+                    height="230px",
+                    width="300px",
+                    border_radius="2em",
+                    bg="rgba(20, 20, 70)",
+                    opacity=1,
+                    box_shadow="rgb(0, 0, 0, .2) -15px 20px 15px",
+                    backdrop_filter="blur(2px)",
+                    position="relative",
+                    left="400px",
+                    top="100px"
+                )
+            ),
+            background_image="linear-gradient(0deg, rgb(10, 10, 60)10%, rgb(0, 0, 5))",
+            height="110vh"
+        ),
+        pc.mobile_only(
+            pc.vstack(
+                pc.heading(
+                    "Welcome wanderer!",
+                    background_image="linear-gradient(60deg, rgb(250, 0, 0)10%, rgb(0, 0, 250))",
+                    background_clip="text",
+                    # text_shadow="rgb(0,0,0,0.5) -4px 4px 5px",
+                    font_size="500%",
+                    filter="blur(0px)",
+                    width="90%"
+                ),
+                pc.heading(
+                    "This is Matt3o0's website, let me show you what to do here.", width="90%")
+            ),
+            pc.hstack(
+                pc.box(
+                    pc.text("Get to know Matt3o0 a little better on his about me page.",
+                            padding="20px", font_size="150%"),
+                    pc.link(
+                        pc.tooltip(
+                            pc.button(pc.icon(tag="LinkIcon"), "About Me", bg="rgb(5, 5, 55)",
+                                      _hover={"opacity": 0.85}),
+                            label="My about me page",
+                            has_arrow=True,
+                        ),
+                        href="/about",
+                        position="relative",
+                        padding_left="15px",
+                        padding_bottom="15px"
+                    ),
+                    height="350px",
+                    width="2000px",
+                    border_radius="2em",
+                    bg="rgba(20, 20, 70)",
+                    opacity=1,
+                    box_shadow="rgb(0, 0, 0, .2) -15px 20px 15px",
+                    backdrop_filter="blur(2px)",
+                    position="relative",
+                    left="30px",
+                    top="50px"
+                ),
+                pc.box(
+                    pc.text("Check out Matt3o0's projects",
+                            padding="20px", font_size="150%"),
+                    pc.link(
+                        pc.tooltip(
+                            pc.button(pc.icon(tag="LinkIcon"), "Projects", bg="rgb(5, 5, 55)",
+                                      _hover={"opacity": 0.85}),
+                            label="My project(s)",
+                            has_arrow=True,
+                        ),
+                        href="/projs",
+                        position="relative",
+                        padding_left="15px",
+                        padding_bottom="15px"
+                    ),
+                    height="350px",
+                    width="2000px",
+                    border_radius="2em",
+                    bg="rgba(20, 20, 70)",
+                    opacity=1,
+                    box_shadow="rgb(0, 0, 0, .2) -15px 20px 15px",
+                    backdrop_filter="blur(2px)",
+                    position="relative",
+                    left="60px",
+                    top="50px"
+                ),
+                pc.box(
+                    pc.text("More to come soon",
+                            padding="20px", font_size="150%", font_style="italic"),
+                    pc.link(
+                        pc.tooltip(
+                            pc.button(pc.icon(tag="LinkIcon"), "Soon™", bg="rgb(5, 5, 55)",
+                                      _hover={"opacity": 0.85}),
+                            label="Nothing yet",
+                            has_arrow=True,
+                        ),
+                        href="/",
+                        position="relative",
+                        padding_left="15px",
+                        padding_bottom="15px"
+                    ),
+                    height="350px",
+                    width="2000px",
+                    border_radius="2em",
+                    bg="rgba(20, 20, 70)",
+                    opacity=1,
+                    box_shadow="rgb(0, 0, 0, .2) -15px 20px 15px",
+                    backdrop_filter="blur(2px)",
+                    position="relative",
+                    left="-200px",
+                    top="450px"
+                )
+            ),
+            background_image="linear-gradient(0deg, rgb(10, 10, 60)10%, rgb(0, 0, 5))",
+            height="150vh"
         )
     )

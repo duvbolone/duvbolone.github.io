@@ -1,14 +1,14 @@
 from pcconfig import config
 import pynecone as pc
-from duvbolone_site.pages import index, about
+from duvbolone_site.pages import index, about, projs
 
 class State(pc.State):
     pass
 
-pages = [index, about]
+pages = [index, about, projs]
 
 style = {
-    "theme_color": "#FFFFFF",
+    #"theme_color": "#FFFFFF",
     "font_family":"helvetica",
     "background_color": "rgb(30, 30, 30)",
     "color":"#FFFFFF",
