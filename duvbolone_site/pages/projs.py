@@ -1,5 +1,6 @@
 import pynecone as pc
 from duvbolone_site.comps.navbar import navBar
+from duvbolone_site.comps.footbar import footBar
 
 route = "/projs"
 title = "Matt3o0's Website: projects"
@@ -45,7 +46,7 @@ My role at ClearFly is programming systems, doing some Plane Maker stuff and dev
                 pc.image(src="/projs/clearfly/clearbot_1.png",
                          box_shadow="rgb(0, 0, 0, 0.2) -8px 8px 10px",
                          _hover={
-                             "filter": "brightness(105%)", "width": "40.5%"},
+                             "filter": "brightness(105%)", "width": "40.1%"},
                          border_radius="4em",
                          width="40%",
                          position="relative",
@@ -55,7 +56,7 @@ My role at ClearFly is programming systems, doing some Plane Maker stuff and dev
                 pc.image(src="/projs/clearfly/b731_1.png",
                          box_shadow="rgb(0, 0, 0, 0.2) -8px 8px 10px",
                          _hover={
-                             "filter": "brightness(105%)", "width": "50.5%"},
+                             "filter": "brightness(105%)", "width": "50.1%"},
                          border_radius="4em",
                          width="50%",
                          position="relative",
@@ -65,7 +66,7 @@ My role at ClearFly is programming systems, doing some Plane Maker stuff and dev
                 pc.image(src="/projs/clearfly/b731_2.png",
                          box_shadow="rgb(0, 0, 0, 0.2) -8px 8px 10px",
                          _hover={
-                             "filter": "brightness(105%)", "width": "40.5%"},
+                             "filter": "brightness(105%)", "width": "40.1%"},
                          border_radius="4em",
                          width="40%",
                          position="relative",
@@ -75,7 +76,7 @@ My role at ClearFly is programming systems, doing some Plane Maker stuff and dev
                 pc.image(src="/projs/clearfly/cfva_1.png",
                          box_shadow="rgb(0, 0, 0, 0.2) -8px 8px 10px",
                          _hover={
-                             "filter": "brightness(105%)", "width": "40.5%"},
+                             "filter": "brightness(105%)", "width": "40.1%"},
                          border_radius="4em",
                          width="40%",
                          position="relative",
@@ -85,7 +86,7 @@ My role at ClearFly is programming systems, doing some Plane Maker stuff and dev
                 pc.image(src="/projs/clearfly/b731_3.png",
                          box_shadow="rgb(0, 0, 0, 0.2) -8px 8px 10px",
                          _hover={
-                             "filter": "brightness(105%)", "width": "50.5%"},
+                             "filter": "brightness(105%)", "width": "50.1%"},
                          border_radius="4em",
                          width="50%",
                          position="relative",
@@ -101,7 +102,8 @@ My role at ClearFly is programming systems, doing some Plane Maker stuff and dev
                                 label="ClearFly GitHub Profile",
                                 has_arrow=True
                             ),
-                            href="https://github.com/ClearFly-Official"
+                            href="https://github.com/ClearFly-Official",
+                            is_external=True
                         ),
                         pc.link(
                             pc.tooltip(
@@ -110,7 +112,8 @@ My role at ClearFly is programming systems, doing some Plane Maker stuff and dev
                                 label="ClearFly Discord server",
                                 has_arrow=True
                             ),
-                            href="https://discord.gg/mBSVAV2np9"
+                            href="https://discord.gg/mBSVAV2np9",
+                            is_external=True
                         ),
                         pc.link(
                             pc.tooltip(
@@ -119,7 +122,8 @@ My role at ClearFly is programming systems, doing some Plane Maker stuff and dev
                                 label="ClearFly on the .org forums",
                                 has_arrow=True
                             ),
-                            href="https://forums.x-plane.org/index.php?/forums/topic/265735-clearfly-boeing-737-100/&"
+                            href="https://forums.x-plane.org/index.php?/forums/topic/265735-clearfly-boeing-737-100/&",
+                            is_external=True
                         ),
                     ),
                     position="relative",
@@ -152,7 +156,8 @@ My role at ClearFly is programming systems, doing some Plane Maker stuff and dev
                                 label="ClearFly GitHub Profile",
                                 has_arrow=True
                             ),
-                            href="https://github.com/ClearFly-Official"
+                            href="https://github.com/ClearFly-Official",
+                            is_external=True
                         ),
                         pc.link(
                             pc.tooltip(
@@ -161,7 +166,8 @@ My role at ClearFly is programming systems, doing some Plane Maker stuff and dev
                                 label="ClearFly Discord server",
                                 has_arrow=True
                             ),
-                            href="https://discord.gg/mBSVAV2np9"
+                            href="https://discord.gg/mBSVAV2np9",
+                            is_external=True
                         ),
                         pc.link(
                             pc.tooltip(
@@ -170,7 +176,8 @@ My role at ClearFly is programming systems, doing some Plane Maker stuff and dev
                                 label="ClearFly on the .org forums",
                                 has_arrow=True
                             ),
-                            href="https://forums.x-plane.org/index.php?/forums/topic/265735-clearfly-boeing-737-100/&"
+                            href="https://forums.x-plane.org/index.php?/forums/topic/265735-clearfly-boeing-737-100/&",
+                            is_external=True
                         ),
                     ),
                     position="relative",
@@ -191,12 +198,5 @@ My role at ClearFly is programming systems, doing some Plane Maker stuff and dev
             ),
             pc.divider(),
         ),
-        pc.link(
-            pc.button("Back to top", pc.icon(tag="ArrowUpIcon")),
-            href="/projs#topOfPage",
-            position="fixed",
-            bottom="5px",
-            right="5px",
-            z_index=98
-        )
+        footBar("/projs")
     )

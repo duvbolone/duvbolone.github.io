@@ -8,7 +8,7 @@ class State(pc.State):
 pages = [index, about, projs]
 
 style = {
-    #"theme_color": "#FFFFFF",
+    #"theme_color": "#FFFFFF", #<meta name="theme-color" content="rgb(30, 30, 30)"/>
     "font_family":"helvetica",
     "background_color": "rgb(30, 30, 30)",
     "color":"#FFFFFF",

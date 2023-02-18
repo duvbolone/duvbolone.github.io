@@ -1,5 +1,6 @@
 import pynecone as pc
 from duvbolone_site.comps.navbar import navBar
+from duvbolone_site.comps.footbar import footBar
 
 route = "/about"
 title = "Matt3o0's Website: about"
@@ -41,6 +42,12 @@ def page():
                     padding_right = "52vh"
                 ),
                 pc.text("My birthday: 20th of May",padding_right = "59vh"),
+                pc.heading("Website Information"),
+                pc.markdown("""
+- Built with: [**Pynecone**](https://pynecone.io)
+- Hosted on: [**GitHub Pages**](https://pages.github.com)
+- Domain by: [**is-a.dev**](https://is-a.dev)
+                """)
             ),
         ),
         pc.mobile_only(
@@ -106,6 +113,6 @@ def page():
                 ),
             ),
             padding = "15px"
-        )
-        
+        ),
+        footBar("/"),
     )
