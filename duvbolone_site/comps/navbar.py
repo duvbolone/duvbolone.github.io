@@ -6,12 +6,12 @@ def navBar(root):
     return pc.box(
         pc.hstack(
             pc.link(
-                pc.mobile_only(
-                    pc.image(src="/M27_cropped.png", width="20%", height="20%",
+                pc.mobile_and_tablet(
+                    pc.image(src="/M27_cropped.png", width="30%", height="30%",
                              box_shadow="rgba(0, 0, 0, 0.3) 0px 3px 10px", border_radius="30px"),
                     _hover={"opacity": .7}
                 ),
-                pc.tablet_and_desktop(
+                pc.desktop_only(
                     pc.hstack(
                         pc.image(src="/M27_cropped.png", width="9%", height="9%",
                                  box_shadow="rgba(0, 0, 0, 0.3) 0px 3px 10px", border_radius="30px"),
@@ -64,14 +64,15 @@ def navBar(root):
             ),
             pc.mobile_only(
                 pc.hstack(
-                    pc.link("Projects", href="/projs",is_external=True),
+                    pc.link("Projects", href="/projs"),
                     pc.text(" "),
-                    pc.link("About", href="/about",is_external=True),
+                    pc.link("About", href="/about"),
                     pc.text(" "),
                     pc.link("Github", href="https://github.com/duvbolone",is_external=True),
                     pc.text(" "),
-                    pc.link(
-                        "Discord", href="https://discord.com/users/668874138160594985",is_external=True),
+                    pc.link("Discord", href="https://discord.com/users/668874138160594985",is_external=True),
+                    font_size="110%",
+                    padding="2px"
                 ),
             ),
             padding="6px",

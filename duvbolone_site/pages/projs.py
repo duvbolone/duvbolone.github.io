@@ -3,15 +3,15 @@ from duvbolone_site.comps.navbar import navBar
 from duvbolone_site.comps.footbar import footBar
 
 route = "/projs"
-title = "Matt3o0's Website: projects"
+title = "Projects - Matt3o0's Website"
 image = "/M27.png"
-description = "My projects"
+description = "The website that's supposed to tell you a little bit more about Matt3o0"
 
 
 def page():
     return pc.box(
         navBar("/"),
-        pc.text("", id="topOfPage", padding="50px"),
+        pc.spacer(id="topOfPage", padding="2%"),
         pc.vstack(
             pc.heading(
                 "Projects",
@@ -22,14 +22,7 @@ def page():
                 pc.markdown("- **ClearFly**"),
                 href="/projs#clearfly",
             ),
-            pc.html("""
-<pre>
-
-
-
-
-</pre>
-"""),
+            pc.spacer(padding="1%"),
             pc.divider(),
             pc.hstack(
                 pc.heading("ClearFly", id="clearfly"),
@@ -128,7 +121,8 @@ My role at ClearFly is programming systems, doing some Plane Maker stuff and dev
                     ),
                     position="relative",
                     bottom="900px"
-                )
+                ),
+                height="1500px"
             ),
             pc.mobile_only(
                 pc.image(src="/projs/clearfly/b731_3.png",
@@ -196,7 +190,6 @@ My role at ClearFly is programming systems, doing some Plane Maker stuff and dev
     </pre>
     """),
             ),
-            pc.divider(),
         ),
         footBar("/projs")
     )
