@@ -111,14 +111,6 @@ def page():
         ),
         pc.mobile_only(
             pc.vstack(
-                pc.alert(
-                        pc.alert_icon(),
-                        pc.alert_title("Warning: This website is NOT optimised for mobile devices.", color="black"),
-                        status="warning",
-                        variant="subtle",
-                        width="100%",
-                        height="50px"
-                ),
                 pc.heading(
                     "Welcome wanderer!",
                     background_image="linear-gradient(60deg, rgb(250, 0, 0)10%, rgb(0, 0, 250))",

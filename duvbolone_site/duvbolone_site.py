@@ -1,9 +1,7 @@
 from pcconfig import config
 import pynecone as pc
 from duvbolone_site.pages import index, about, projs
-
-class State(pc.State):
-    pass
+from duvbolone_site.comps.state import State
 
 pages = [index, about, projs]
 

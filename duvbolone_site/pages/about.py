@@ -1,6 +1,7 @@
 import pynecone as pc
 from duvbolone_site.comps.navbar import navBar
 from duvbolone_site.comps.footbar import footBar
+from duvbolone_site.comps.state import State
 
 route = "/about"
 title = "Matt3o0's Website: about"

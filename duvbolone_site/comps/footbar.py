@@ -1,4 +1,5 @@
 import pynecone as pc
+from duvbolone_site.comps.state import State
 
 
 def footBar(root):
@@ -25,6 +26,7 @@ def footBar(root):
             padding_top="25px",
             height="200px"
         ),
+        pc.button("Show Alert", on_click=State.alert),
         pc.link(
             pc.button("Back to top", pc.icon(tag="ArrowUpIcon")),
             href=f"{root}#topOfPage",
