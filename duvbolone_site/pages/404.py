@@ -16,6 +16,10 @@ def page():
                 pc.heading("Page not found", color="rgb(220, 220, 220)"),
             ),
             pc.spacer(padding="50px"),
+            pc.link(
+                pc.button(pc.icon(tag="ArrowBackIcon"),"Return to Home Page"),
+                href="/"
+                ),
             pc.hstack(
                 pc.icon(tag="ArrowDownIcon", font_size="250%"),
                 pc.heading("See below for all available pages"),
