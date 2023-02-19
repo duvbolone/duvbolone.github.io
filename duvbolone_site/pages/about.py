@@ -22,21 +22,23 @@ def page():
                 pc.span("Hello there! I'm Matt3o0 and here I will tell you a little bit about myself.", font_size = "130%", font_weight="bold", width=["95%", "95%", "90%", "auto"]),
                 pc.vstack(
                     pc.text("""
-    I live in Belgium, speak English, Dutch, Italian(I'm half Italian) and a bit of French. 
-    When I game it's usually X-Plane, Minecraft, ETS2 or Universe Sandbox. 
-    I'm interested in a lot of subjects too, like:
-                    """, width = ["65%","70%", "90%", "65%"]),
+I live in Belgium, speak English, Dutch, Italian(I'm half Italian) and a bit of French. 
+When I game it's usually X-Plane, Minecraft, ETS2 or Universe Sandbox. 
+I'm interested in a lot of subjects too, like:
+                    """, width = ["80%","90%", "90%", "35%"]),
                     pc.vstack(
-                        pc.unordered_list(items = ["🛩️ Aviation", "🔭 Astronomy/Rocketry", "📸 (Astro)photography", "🗣️ Languages", "💻 Everything computers"]),
+                        pc.unordered_list(items = ["🛩️ Aviation", "🔭 Astronomy", "📸 (Astro)photography", "🗣️ Languages", "💻 Everything computers"]),
                         pc.unordered_list(items = ["⌨️ Coding"]),
-                        pc.unordered_list(items = ["🐍 Python", "☕️ Java", "🚀 C++"], padding_left = "40%"),
-                        padding_right = "50vh",
+                        pc.unordered_list(items = ["🐍 Python", "☕️ Java", "🚀 C++"], padding_left = "25%"),
                         font_weight = "bold",
-                        padding_left=["40%","40%", "10%", "10%"],
-                        #width="200px",
-                        #bg="white"
+                        font_size="90%",
+                        padding_right=["0%", "0%", "0%", "10%"]
+                        #bg="white",
+                        #width="100%"
                     ),
                     font_size = "110%",
+                    width="100%",
+                    #bg="red",
                 ),
                 pc.heading("Quick Information"),
                 pc.hstack(

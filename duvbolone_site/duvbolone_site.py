@@ -8,7 +8,8 @@ pages = [index, about, projs]
 style = {
     #"theme_color": "#FFFFFF", #<meta name="theme-color" content="rgb(30, 30, 30)"/>
     #"font_family":"monospace",
-    "background_color": "rgb(30, 30, 30)",
+    "bg": "linear-gradient(0deg, rgb(0, 0, 0), rgb(30, 30, 30))",
+    "background_color":"rgb(10, 10, 15)",
     "color":"#FFFFFF",
     pc.Button: {
         "bg":"rgb(50, 50, 50)"

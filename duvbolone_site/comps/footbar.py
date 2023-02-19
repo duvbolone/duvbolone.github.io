@@ -26,6 +26,17 @@ def footBar(root):
             padding_top="25px",
             height="200px"
         ),
+        pc.mobile_only(
+            pc.text("Some elements might show incorrectly on your current device.", 
+                    color="rgb(90, 90, 90)", 
+                    font_size="90%", 
+                    font_style="italic",
+                    width="190%", 
+                    position="relative", 
+                    top="65px",
+                    right="130px"
+                )
+        ),
         pc.spacer(),
         pc.link(
                 pc.button("Back to top", pc.icon(tag="ArrowUpIcon")),

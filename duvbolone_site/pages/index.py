@@ -21,7 +21,7 @@ def page():
                         background_image="linear-gradient(60deg, rgb(250, 0, 0)10%, rgb(0, 0, 250))",
                         background_clip="text",
                         # text_shadow="rgb(0,0,0,0.5) -4px 4px 5px",
-                        font_size="500%",
+                        font_size=["490%","500%","500%","500%"],
                         filter="blur(0px)",
                         width=["90%", "90%", "90%", "90%"]
                     ),
@@ -79,7 +79,7 @@ def page():
                         backdrop_filter="blur(2px)",
                     ),
                     pc.box(
-                        pc.text("Check out the source code of this website!",
+                        pc.text("Check out the source code of this website",
                                 padding="20px", font_size="150%"),
                         pc.link(
                             pc.tooltip(
@@ -158,7 +158,7 @@ def page():
                         backdrop_filter="blur(2px)",
                     ),
                     pc.box(
-                        pc.text("Check out the source code of this website!",
+                        pc.text("Check out the source code of this website",
                                 padding="20px", font_size="150%"),
                         pc.link(
                             pc.tooltip(
