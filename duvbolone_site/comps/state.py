@@ -1,5 +1,7 @@
 import pynecone as pc
 
 class State(pc.State):
-    def alert(self):
-        return pc.window_alert("Hello there!")
+    
+    @pc.var
+    def get_url(self):
+        return self.get_query_params().get("any", "none")

@@ -2,8 +2,11 @@ from pcconfig import config
 import pynecone as pc
 from duvbolone_site.pages import index, about, projs
 from duvbolone_site.comps.state import State
+import importlib
 
-pages = [index, about, projs]
+page404 = importlib.import_module("duvbolone_site.pages.404")
+
+pages = [index, about, projs, page404]
 
 style = {
     #"theme_color": "#FFFFFF", #<meta name="theme-color" content="rgb(30, 30, 30)"/>
