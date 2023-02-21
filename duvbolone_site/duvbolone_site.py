@@ -1,12 +1,9 @@
 from pcconfig import config
 import pynecone as pc
-from duvbolone_site.pages import index, about, projs
+from duvbolone_site.pages import index, about, projs, error404
 from duvbolone_site.comps.state import State
-import importlib
 
-page404 = importlib.import_module("duvbolone_site.pages.404")
-
-pages = [index, about, projs, page404]
+pages = [index, about, projs]
 
 style = {
     #"theme_color": "#FFFFFF", #<meta name="theme-color" content="rgb(30, 30, 30)"/>
@@ -34,4 +31,10 @@ for page in pages:
         )
 
 # Add state and page to the app.
+app.add_custom_404_page(
+        error404.page(),
+        image = "/M27.png",
+        description = "Error 404 page, noting interesting here.",
+        title="Error 404 - Matt3o0's website"
+    )
 app.compile()
