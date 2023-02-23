@@ -23,7 +23,7 @@ def page():
                         # text_shadow="rgb(0,0,0,0.5) -4px 4px 5px",
                         font_size=["490%","500%","500%","500%"],
                         filter="blur(0px)",
-                        width=["90%", "90%", "90%", "90%"]
+                        width=["92%", "92%", "90%", "90%"]
                     ),
                     pc.heading(
                         "This is Matt3o0's website, let me show you what to do here.", width=["90%", "90%", "90%", "100%"]

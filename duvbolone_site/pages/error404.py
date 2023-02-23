@@ -11,16 +11,16 @@ description = "This is a 404 page, nothing interesting here 💀"
 def page():
     return pc.box(
         pc.vstack(
-            pc.heading("Error 404", font_size="900%", padding="30px"),
-            pc.hstack(
-                pc.heading("Page not found", color="rgb(220, 220, 220)"),
-            ),
-            pc.spacer(padding="50px"),
+            pc.heading("Oops, seems like you took a wrong turn.", font_size="500%", padding="60px", id="topOfPage"),
             pc.link(
-                pc.button(pc.icon(tag="ArrowBackIcon"),"Return to Home Page"),
+                pc.button(pc.icon(tag="ArrowBackIcon"), "Return to Home", font_size="190%", _hover={"opacity": 0.85}),
                 href="/"
                 ),
+            pc.spacer(padding="50px"),
+            pc.hstack(
+                pc.heading("Error 404: Page not found", color="rgb(220, 220, 220)"),
+            ),
         ),
         pc.spacer(padding="200px"),
-        footBar('/')
+        footBar('/e')
     )

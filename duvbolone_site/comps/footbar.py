@@ -42,7 +42,8 @@ def footBar(root):
                 pc.button("Back to top", pc.icon(tag="ArrowUpIcon")),
                 href=f"{root}#topOfPage",
                 padding_right = "10px",
-                padding_top = "130px"
+                padding_top = "130px",
+                _hover={"opacity": 0.85}
                 ),
         bg="rgb(10, 10, 15)"
     )
