@@ -12,7 +12,10 @@ style = {
     "background_color":"rgb(10, 10, 15)",
     "color":"#FFFFFF",
     pc.Button: {
-        "bg":"rgb(50, 50, 50)"
+        "bg":"rgb(50, 50, 50)",
+        "_hover":{
+            "opacity":0.85
+        }
     }
 }
 
