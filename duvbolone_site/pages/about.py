@@ -7,7 +7,9 @@ route = "/about"
 title = "About - Matt3o0's Website"
 image = "/M27.png"
 description = "The website that's supposed to tell you a little bit more about Matt3o0"
-
+meta = [
+    {"name":"theme-color", "content":"rgb(22, 22, 22)"}
+]
 def page():
     return pc.box(
         navBar("/"),

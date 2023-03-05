@@ -7,13 +7,13 @@ def navBar(root):
         pc.hstack(
             pc.link(
                 pc.mobile_and_tablet(
-                    pc.image(src="/M27_cropped.png", width="30%", height="30%",
+                    pc.image(src="/M27_cropped.png", width="10%",
                              box_shadow="rgba(0, 0, 0, 0.3) 0px 3px 10px", border_radius="30px"),
                     _hover={"opacity": .7}
                 ),
                 pc.desktop_only(
                     pc.hstack(
-                        pc.image(src="/M27_cropped.png", width="9%", height="9%",
+                        pc.image(src="/M27_cropped.png", width="8%",
                                  box_shadow="rgba(0, 0, 0, 0.3) 0px 3px 10px", border_radius="30px"),
                         pc.heading("Matt3o0", font_size="230%"),
                         _hover={"opacity": .7}

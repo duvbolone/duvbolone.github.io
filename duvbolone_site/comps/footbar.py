@@ -39,7 +39,7 @@ def footBar(root):
         ),
         pc.spacer(),
         pc.link(
-                pc.button("Back to top", pc.icon(tag="ArrowUpIcon")),
+                pc.button("Back to top", pc.icon(tag="arrow_up")),
                 href=f"{root}#topOfPage",
                 padding_right = "10px",
                 padding_top = "130px",

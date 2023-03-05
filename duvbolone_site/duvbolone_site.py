@@ -6,8 +6,6 @@ from duvbolone_site.comps.state import State
 pages = [index, about, projs]
 
 style = {
-    #"theme_color": "#FFFFFF", #<meta name="theme-color" content="rgb(30, 30, 30)"/>
-    #"font_family":"monospace",
     "bg": "linear-gradient(0deg, rgb(0, 0, 0), rgb(30, 30, 30))",
     "background_color":"rgb(10, 10, 15)",
     "color":"#FFFFFF",
@@ -31,6 +29,7 @@ for page in pages:
         title = page.title,
         image = page.image,
         description = page.description,
+        meta = page.meta,
         )
 
 # Add state and page to the app.

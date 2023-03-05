@@ -6,6 +6,9 @@ route = "/"
 title = "Home - Matt3o0's Website"
 image = "/M27.png"
 description = "The website that's supposed to tell you a little bit more about Matt3o0"
+meta = [
+    {"name":"theme-color", "content":"rgb(0, 0, 5)"}
+]
 
 
 def page():
@@ -37,7 +40,7 @@ def page():
                                 padding="20px", font_size="150%"),
                         pc.link(
                             pc.tooltip(
-                                pc.button(pc.icon(tag="LinkIcon"), "About Me", bg="rgb(5, 5, 55)",
+                                pc.button(pc.icon(tag="link"), "About Me", bg="rgb(5, 5, 55)",
                                         _hover={"opacity": 0.85}),
                                 label="My about me page",
                                 has_arrow=True,
@@ -60,7 +63,7 @@ def page():
                                 padding="20px", font_size="150%"),
                         pc.link(
                             pc.tooltip(
-                                pc.button(pc.icon(tag="LinkIcon"), "Projects", bg="rgb(5, 5, 55)",
+                                pc.button(pc.icon(tag="link"), "Projects", bg="rgb(5, 5, 55)",
                                         _hover={"opacity": 0.85}),
                                 label="My project(s)",
                                 has_arrow=True,
@@ -83,7 +86,7 @@ def page():
                                 padding="20px", font_size="150%"),
                         pc.link(
                             pc.tooltip(
-                                pc.button(pc.icon(tag="LinkIcon"), "Website source code", bg="rgb(5, 5, 55)",
+                                pc.button(pc.icon(tag="link"), "Website source code", bg="rgb(5, 5, 55)",
                                         _hover={"opacity": 0.85}),
                                 label="Source code of this website",
                                 has_arrow=True,
@@ -116,7 +119,7 @@ def page():
                                 padding="20px", font_size="150%", ),
                         pc.link(
                             pc.tooltip(
-                                pc.button(pc.icon(tag="LinkIcon"), "About Me", bg="rgb(5, 5, 55)",
+                                pc.button(pc.icon(tag="link"), "About Me", bg="rgb(5, 5, 55)",
                                         _hover={"opacity": 0.85}),
                                 label="My about me page",
                                 has_arrow=True,
@@ -139,7 +142,7 @@ def page():
                                 padding="20px", font_size="150%"),
                         pc.link(
                             pc.tooltip(
-                                pc.button(pc.icon(tag="LinkIcon"), "Projects", bg="rgb(5, 5, 55)",
+                                pc.button(pc.icon(tag="link"), "Projects", bg="rgb(5, 5, 55)",
                                         _hover={"opacity": 0.85}),
                                 label="My project(s)",
                                 has_arrow=True,
@@ -162,7 +165,7 @@ def page():
                                 padding="20px", font_size="150%"),
                         pc.link(
                             pc.tooltip(
-                                pc.button(pc.icon(tag="LinkIcon"), "Website source code", bg="rgb(5, 5, 55)",
+                                pc.button(pc.icon(tag="link"), "Website source code", bg="rgb(5, 5, 55)",
                                         _hover={"opacity": 0.85}),
                                 label="Source code of this website",
                                 has_arrow=True,
